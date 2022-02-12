@@ -52,7 +52,7 @@ const Bingo = () => {
                     Défi commun !
                 </div>
                 <div className='SharedChallengeContainer__row'>
-                    <img src={logo}/>
+                    <img src={logo} alt="bdva logo"/>
                     <SharedChallenge/>
                 </div>
             </div>
