@@ -1,0 +1,39 @@
+.BingoTable, .BingoChallenge {
+    border: solid #ff4e00 3px;
+}
+
+.BingoTableShadow{
+    margin: auto;
+    width: 80%;
+    overflow-x: scroll;
+    background-color: black;
+    border: solid black 3px;
+    box-shadow: 5px 5px 0 black;;
+}
+
+.BingoTable {
+    margin: auto;
+    width: 800px;
+    background: linear-gradient(45deg, white 25%,
+	#ff4e00 25%, #ff4e00 50%, 
+	white 50%, white 75%, 
+	#ff4e00 75%);
+    background-size: 20px 20px;
+    border-collapse: collapse;
+}
+
+
+.BingoChallenge{
+    height: 100%;
+    background-color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.BingoNoChallenge{
+    background-color: transparent !important;
+}
+
+.BingoRow{
+    height: 125px;
+}

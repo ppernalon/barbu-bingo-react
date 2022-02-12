@@ -1,0 +1,26 @@
+.SharedChallenge{
+    box-sizing: border-box;
+    border-radius: 100%;
+    background-color: white;
+    border: solid #ff4e00 5px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SharedChallengeShadow{
+    position: relative;
+    bottom: -10px;
+    border-radius: 100%;
+    background-color: black;
+    height: 140px;
+    width: 140px;
+    padding: 2px;
+    box-shadow: 5px 5px 0 black;
+}
+
+.SharedChallenge span {
+    text-align: center;
+}
