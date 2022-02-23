@@ -1,15 +1,22 @@
-import React from "react"
+import React, { useState } from "react"
 import "./BingoTable.css"
 
-const BingoTable = ({challenges}) =>{
+const BingoTable = ({challenges, spaceAvailable}) => {
+    const [cellHeight, setCellHeight] = useState(spaceAvailable/challenges.length)
+    const [cellWidth, setCellWidth] = useState(115)
+
     return (
-        <div className="BingoTableShadow">
-            <table className="BingoTable">
+        <div className="BingoTableShadow" style={{width: 'fit-content'}}>
+            <table className="BingoTable" style={{width: cellWidth*challenges[0].length}}>
                 <tbody>
                     {
                         challenges.map((row, rowIndex) => {
                             return (
-                                <tr key={`challengesRow_${rowIndex}`} className="BingoRow"> 
+                                <tr 
+                                    key={`challengesRow_${rowIndex}`} 
+                                    className="BingoRow"
+                                    style={{height: cellHeight}}
+                                > 
                                     {
                                         row.map((challenge, challengeIndex) => {
                                             if (challenge !== "NONE")

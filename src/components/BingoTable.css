@@ -4,7 +4,7 @@
 
 .BingoTableShadow{
     margin: auto;
-    width: 80%;
+    max-width: 90%;
     overflow-x: scroll;
     background-color: black;
     border: solid black 3px;
@@ -13,7 +13,7 @@
 
 .BingoTable {
     margin: auto;
-    width: 800px;
+    /* width: 800px; */
     background: linear-gradient(45deg, white 25%,
 	#ff4e00 25%, #ff4e00 50%, 
 	white 50%, white 75%, 
@@ -32,8 +32,4 @@
 
 .BingoNoChallenge{
     background-color: transparent !important;
-}
-
-.BingoRow{
-    height: 125px;
 }
