@@ -10,5 +10,5 @@
 
 .LayoutChildren{
     box-sizing: border-box;
-    height: 70%;
+    overflow-y: scroll;
 }

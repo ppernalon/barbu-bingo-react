@@ -3,8 +3,8 @@ import Menu from './Menu'
 import "./Layout.css"
 
 const Layout = ({children}) => {
-    const childrenHeight = (window.innerHeight - 40)*0.8
-    const menuHeight = (window.innerHeight - 40)*0.2
+    const childrenHeight = (window.innerHeight - 40)*0.85
+    const menuHeight = (window.innerHeight - 40)*0.15
 
     return (
         <div className='LayoutContainer'>

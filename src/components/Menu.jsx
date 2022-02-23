@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import {Link} from "react-router-dom"
 import './Menu.css'
+import Logo from '../assets/logo_monochrome.svg'
 
 const Menu = () => {
     const [visible, setVisible] = useState(false)
@@ -20,6 +21,7 @@ const Menu = () => {
                             <Link to={"/3A4A"}> Défis 3/4A </Link>
                             <Link to={"/shared-challenge"}> Défis commun </Link>
                             <Link to={"/rules"}> Règles </Link>
+                            <img className={"MenuLogo"} src={Logo} alt="logo BDVA"/>
                         </div>
                     </div>
                     : null
