@@ -1,0 +1,13 @@
+.BingoTableContainer{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.BingoTitle{
+    font-family: "Luckiest Guy", cursive;
+    font-size: 25px;
+    color: #ff4e00;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}

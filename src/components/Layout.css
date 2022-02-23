@@ -1,0 +1,14 @@
+.LayoutContainer{
+    box-sizing: border-box;
+    padding: 20px;
+    height: 100%;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.LayoutChildren{
+    box-sizing: border-box;
+    height: 70%;
+}
