@@ -1,9 +1,9 @@
-import React, { useState } from "react"
+import React from "react"
 import "./BingoTable.css"
 
 const BingoTable = ({challenges, spaceAvailable}) => {
-    const [cellHeight, setCellHeight] = useState(spaceAvailable/challenges.length)
-    const [cellWidth, setCellWidth] = useState(115)
+    const cellHeight = spaceAvailable/challenges.length
+    const cellWidth = 115
 
     return (
         <div className="BingoTableShadow" style={{width: 'fit-content'}}>
