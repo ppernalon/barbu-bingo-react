@@ -1,8 +1,11 @@
 import './BingoPage.css'
 import React from "react"
 import BingoTable from '../components/BingoTable'
+import { useLocation } from 'react-router-dom'
 
 const BingoPage = () => {
+	const location = useLocation()
+	const is1A2A = location.pathname === "/1A2A"
     
 	const challenges = [
 		[
@@ -42,8 +45,10 @@ const BingoPage = () => {
                     Bingo 
 					<br/>
 					des Vieux As Aigris
+					<br/>
+					pour les {is1A2A ? "1As et 2As" : "3As et 4As"}
                 </div>
-                <BingoTable challenges={challenges} spaceAvailable={window.screen.height*0.6} />
+                <BingoTable challenges={challenges} spaceAvailable={window.innerHeight*0.6} />
             </div>
         </div>
     )

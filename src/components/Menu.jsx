@@ -16,7 +16,6 @@ const Menu = () => {
                 visible ?
                     <div className="MenuItemsBackGround" onClick={() => setVisible(false)}>
                         <div className="MenuItems">
-                            <Link to={"/"}> Accueil </Link>
                             <Link to={"/1A2A"}> Défis 1/2A </Link>
                             <Link to={"/3A4A"}> Défis 3/4A </Link>
                             <Link to={"/shared-challenge"}> Défis commun </Link>
