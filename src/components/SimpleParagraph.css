@@ -1,0 +1,17 @@
+.SimpleParagraphTitle{
+    font-family: "Luckiest Guy", cursive;
+    font-size: 25px;
+    color: #ff4e00;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.SimpleParagraphText{
+    margin-top: 0;
+}
+
+.SimpleParagraphContainer{
+    margin-bottom: 10px;
+}
