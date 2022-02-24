@@ -1,0 +1,45 @@
+.AdminPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.AdminPageNewChallenge{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 30px;
+    border: 2px solid #ff4e00;
+}
+
+.AdminPageInput{
+    height: 25px;
+    padding: 4px 8px;
+    width: 100%;
+    border-style: solid;
+    border-color: #ff4e00;
+}
+
+.AdminPageButton{
+    cursor: pointer;
+    width: fit-content;
+    border-radius: 30px;
+    padding: 12px;
+    background-color: #ff4e00 ;
+    width: fit-content;
+    color: white;
+    font-size: 20px;
+    font-family: "Luckiest Guy", cursive;
+    letter-spacing: 2px;
+    outline: none;
+    border: none;
+}
+
+.AdminPageButton:focus{
+    outline: none;
+    border: none;
+}

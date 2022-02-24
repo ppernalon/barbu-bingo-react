@@ -4,6 +4,7 @@ import BingoPage from './pages/BingoPage'
 import SharedChallengePage from './pages/SharedChallengePage'
 import Layout from './components/Layout'
 import RulesPage from './pages/RulesPage'
+import AdminPage from './pages/AdminPage'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
 				<Route path={"/3A4A"} element={<BingoPage />} />
 				<Route path={"/shared-challenge"} element={<SharedChallengePage />} />
 				<Route path={"/rules"} element={<RulesPage />} />
+				<Route path={"/j-espere-que-pilouf-va-trouver-cette-page"} element={<AdminPage />} />
 			</Routes>
 		</Layout>
 	
