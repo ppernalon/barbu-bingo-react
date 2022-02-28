@@ -10,18 +10,14 @@ const BingoPage = () => {
 	const challenges = is1A2A ? BingoPage.challenges12A : BingoPage.challenges34A
 
     return (
-        <div>
-            <div>
-                <div className='BingoTitle'>
-                    Bingo 
-					<br/>
-					des Vieux As Aigris
-					<br/>
-					pour les {is1A2A ? "1As et 2As" : "3As et 4As"}
-                </div>
-                <BingoTable challenges={challenges} spaceAvailable={window.innerHeight*0.6} />
-            </div>
-        </div>
+		<div>
+			<div className='BingoTitle'>
+				Bingo {is1A2A ? "1/2As" : "3/4As"}
+				<br/>
+				des Vieux As Aigris
+			</div>
+			<BingoTable challenges={challenges} spaceAvailable={(window.innerHeight - 40)*0.73} />
+		</div>
     )
 }
 
