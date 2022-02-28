@@ -1,15 +1,8 @@
 import React, { useEffect, useState } from "react"
-import { io } from "socket.io-client"
-import constants from "../constants"
 import './SharedChallenge.css'
 
-const SharedChallenge = () => {
+const SharedChallenge = ({socket}) => {
     const [currentChallenge, setCurrentChallenge] = useState('') 
-    const [socket, setSocket] = useState(null)
-
-    useEffect(() => {
-        setSocket(io(`${constants.SERVER_URL}`))
-    }, [])
 
     useEffect(() => {
         if (socket){
