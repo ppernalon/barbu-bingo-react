@@ -21,6 +21,7 @@ const Menu = () => {
                             <Link to={"/3A4A"}> Défis 3/4A </Link>
                             <Link to={"/shared-challenge"}> Défis commun </Link>
                             <Link to={"/rules"}> Règles </Link>
+                            <Link to={"/qr-code"}> Partager le bingo </Link>
                             <img className={"MenuLogo"} src={Logo} alt="logo BDVA"/>
                         </div>
                     </div>
