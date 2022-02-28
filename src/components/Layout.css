@@ -1,6 +1,6 @@
 .LayoutContainer{
     box-sizing: border-box;
-    padding: 20px;
+    padding: 20px 0;
     height: 100%;
     max-height: 100%;
     display: flex;
@@ -10,5 +10,6 @@
 
 .LayoutChildren{
     box-sizing: border-box;
+    padding: 0 20px;
     overflow-y: scroll;
 }

@@ -3,32 +3,52 @@
 }
 
 .BingoTableShadow{
+    box-sizing: border-box;
     margin: auto;
     max-width: 90%;
     overflow-x: scroll;
     background-color: black;
     border: solid black 3px;
     box-shadow: 5px 5px 0 black;;
+    overflow-y: hidden;
 }
 
 .BingoTable {
+    max-height: 100%;
+    box-sizing: border-box;
     margin: auto;
     background: linear-gradient(45deg, white 25%,
 	#ff4e00 25%, #ff4e00 50%, 
 	white 50%, white 75%, 
 	#ff4e00 75%);
     background-size: 20px 20px;
+    border: solid #ff4e00 1px;
     border-collapse: collapse;
+    display: flex;
+    flex-direction: column;
+}
+
+.BingoRow{
+    box-sizing: border-box;
+    display: flex;
 }
 
 
 .BingoChallenge{
+    box-sizing: border-box;
     height: 100%;
+    padding: 15px;
     background-color: white;
     text-align: center;
-    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .BingoNoChallenge{
     background-color: transparent !important;
+}
+
+.SpanChallenge{
+    display: block;
 }
