@@ -18,10 +18,10 @@ const RulesPage = () => {
             title: "Défis partagés",
             text: (
                 <> 
-                    Tous les participants peuvent réaliser un défi commun.
-                    Dès qu'un participant valide son défi auprès du staff BDVA, 
-                    un nouveau est disponible. Si personne ne réalise le défi en cours
-                    pendant 15min, un nouveau remplace celui-ci.
+                    Toutes les 10 minutes un nouveau défi s'ajoute à la liste des
+                    défis partagés, ces derniers sont réalisables par tous les Centraliens,
+                    peu importe leur promotion entrante, dès lors qu'ils apparaissent
+                    sur l'application.
                 </>
             )
         }, 
