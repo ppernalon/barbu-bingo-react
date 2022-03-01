@@ -4,12 +4,14 @@ import './SharedChallenge.css'
 const SharedChallenge = ({socket}) => {
     const [currentChallenge, setCurrentChallenge] = useState('') 
 
+    const setCurrentChallengeFromWs = (ws) => {
+        setCurrentChallenge(ws.challenge) 
+    }
+
     useEffect(() => {
         if (socket){
-            socket.on('connection', (ws) => setCurrentChallenge(ws.challenge))
-            socket.on('new.challenge', (ws) => {
-                setCurrentChallenge(ws.challenge) 
-            })
+            socket.on('connection', setCurrentChallengeFromWs)
+            socket.on('new.challenge', setCurrentChallengeFromWs)
         }
     }, [socket])
 

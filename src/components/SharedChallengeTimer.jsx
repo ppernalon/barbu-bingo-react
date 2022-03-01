@@ -7,15 +7,18 @@ const SharedChallengeTimer = ({socket}) => {
     const [secondeTimer, setSecondeTimer] = useState(0)
     const [minuteTimer, setMinuteTimer] = useState(0)
 
-    const resetTimer = () => {
-        setSecondeTimer(0)
-        setMinuteTimer(0)
+    const setTimerFromWs = (ws) => {
+        const secondsPassed = (Date.now() - ws.date)/1000
+        const minuteTimer = Math.floor(secondsPassed/60)
+        const secondTimer = Math.floor(secondsPassed%60)
+        setSecondeTimer(secondTimer)
+        setMinuteTimer(minuteTimer)
     }
 
     useEffect(() => {
         if (socket){
-            socket.on('connection', resetTimer)
-            socket.on('new.challenge', resetTimer)
+            socket.on('connection', setTimerFromWs)
+            socket.on('new.challenge', setTimerFromWs)
         }
     }, [socket])
 
