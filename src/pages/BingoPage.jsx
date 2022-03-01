@@ -77,7 +77,7 @@ BingoPage.challenges34A = [
 		"NONE",
 		"NONE", 
 		"Offre une bière à un membre de la team Bar'Bu 2021 ou 2022", 
-		"Trouve un 1A ou 2A avec 4 assos ou plus", 
+		"Prends toi en photo un 1A ou 2A avec 4 assos ou plus", 
 		"Cite 3 des 4 présidents d'asso en poste en 2021 qui ont redoublés (et leurs asso bien sûr !)", 
 		"Prends une photo avec le prédécesseur actuel d'un de tes postes en asso (si pas possible choisi un de tes potes et mets toi sur la photo avec lui et un de ses successeurs)"
 	],
