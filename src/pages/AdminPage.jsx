@@ -7,7 +7,6 @@ import './AdminPage.css'
 const AdminPage = () => {
     const [socket, setSocket] = useState(null)
     const newChallengeRef = useRef(null)
-    const timeBetweenChallengeRef = useRef(null)
     const [isGameOn, setIsGameOn] = useState(false)
 
     useEffect(() => {
@@ -22,8 +21,8 @@ const AdminPage = () => {
     useEffect(() => {
         if (socket){
             socket.on('connection', onGameStateChange)
-            socket.on('start.bingo', onGameStateChange)
-            socket.on('stop.bingo', onGameStateChange)
+            socket.on('start.bingo.back', onGameStateChange)
+            socket.on('stop.bingo.back', onGameStateChange)
         }
     }, [socket])
     
@@ -35,14 +34,19 @@ const AdminPage = () => {
 
     const startSharedChallenges = (event) => {
         event.preventDefault()
-        socket.emit('start.bingo')
+        socket.emit('start.bingo.front')
         setIsGameOn(true)
     }
 
     const stopSharedChallenges = (event) => {
         event.preventDefault()
-        socket.emit('stop.bingo')
+        socket.emit('stop.bingo.front')
         setIsGameOn(false)
+    }
+
+    const skipSharedChallenges = (event) => {
+        event.preventDefault()
+        socket.emit('skip.sharedChallenge')
     }
 
     return (
@@ -50,9 +54,15 @@ const AdminPage = () => {
 
             {
                 isGameOn ? (
-                    <form onSubmit={stopSharedChallenges} className="AdminPageForm">
-                        <button className={"AdminPageButton"} type={"submit"}> Stopper les défis partagés  </button>
-                    </form>
+                    <>
+                        <form onSubmit={stopSharedChallenges} className="AdminPageForm">
+                            <button className={"AdminPageButton"} type={"submit"}> Stopper les défis partagés  </button>
+                        </form>
+                        <form onSubmit={skipSharedChallenges} className="AdminPageForm">
+                            <button className={"AdminPageButton"} type={"submit"}> Sauter un défi  </button>
+                        </form>
+                    </>
+
                 ) : (
                     <form onSubmit={startSharedChallenges} className="AdminPageForm">
                         <button className={"AdminPageButton"} type={"submit"}> Lancer les défis partagés  </button>
