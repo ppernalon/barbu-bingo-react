@@ -15,7 +15,7 @@ const Menu = () => {
             </div>
             {
                 visible ?
-                    <div className="MenuItemsBackGround" onClick={() => setVisible(false)}>
+                    <div>
                         <div className="MenuItems">
                             <Link to={"/1A2A"}> Défis 1/2A </Link>
                             <Link to={"/3A4A"}> Défis 3/4A </Link>
@@ -24,6 +24,7 @@ const Menu = () => {
                             <Link to={"/qr-code"}> Partager le bingo </Link>
                             <img className={"MenuLogo"} src={Logo} alt="logo BDVA"/>
                         </div>
+                        <div className="MenuItemsBackGround" onClick={() => setVisible(false)}/>
                     </div>
                     : null
             }
