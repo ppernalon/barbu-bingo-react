@@ -17,11 +17,11 @@ const Menu = () => {
                 visible ?
                     <div>
                         <div className="MenuItems">
-                            <Link to={"/1A2A"}> Défis 1/2A </Link>
-                            <Link to={"/3A4A"}> Défis 3/4A </Link>
-                            <Link to={"/shared-challenge"}> Défis partagés </Link>
-                            <Link to={"/rules"}> Règles </Link>
-                            <Link to={"/qr-code"}> Partager le bingo </Link>
+                            <Link onClick={() => setVisible(false)} to={"/1A2A"}> Défis 1/2A </Link>
+                            <Link onClick={() => setVisible(false)} to={"/3A4A"}> Défis 3/4A </Link>
+                            <Link onClick={() => setVisible(false)} to={"/shared-challenge"}> Défis partagés </Link>
+                            <Link onClick={() => setVisible(false)} to={"/rules"}> Règles </Link>
+                            <Link onClick={() => setVisible(false)} to={"/qr-code"}> Partager le bingo </Link>
                             <img className={"MenuLogo"} src={Logo} alt="logo BDVA"/>
                         </div>
                         <div className="MenuItemsBackGround" onClick={() => setVisible(false)}/>
