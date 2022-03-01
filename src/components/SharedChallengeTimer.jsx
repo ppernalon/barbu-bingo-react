@@ -47,7 +47,7 @@ const SharedChallengeTimer = ({socket}) => {
 
     return (
         <div className="SharedChallengeTimer">
-            { minuteTimer > 9 ? minuteTimer : "0" + minuteTimer } : { secondeTimer > 9 ? secondeTimer : "0" + secondeTimer }  / 15:00
+            { minuteTimer > 9 ? minuteTimer : "0" + minuteTimer } : { secondeTimer > 9 ? secondeTimer : "0" + secondeTimer }  / 10:00
             <Hourglass/>
         </div>
     )

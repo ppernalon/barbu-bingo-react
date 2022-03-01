@@ -6,7 +6,7 @@
     height: 100%;
 }
 
-.AdminPageNewChallenge{
+.AdminPageForm{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,6 +22,10 @@
     width: 100%;
     border-style: solid;
     border-color: #ff4e00;
+}
+
+.AdminPageInput:focus{
+    outline: none;
 }
 
 .AdminPageButton{
