@@ -18,4 +18,15 @@
 .HomeLogo{
     position: relative;
     left: 4vw;
+    max-width: 300px;
 }
+
+.HomeQRCode{
+    max-width: 300px;
+}
+
+@media screen and (min-width: 500px) {
+    .HomeLogo {
+        left: 20px;
+    }
+  }

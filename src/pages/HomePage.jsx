@@ -17,7 +17,7 @@ const HomePage = () => {
                     N'hésitez pas à partager l'application !
                 </p>
             </div>
-            <img src={QRcode} width={window.innerWidth*0.5} alt='QR-code-bdva' />
+            <img src={QRcode} width={window.innerWidth*0.5} alt='QR-code-bdva' className='HomeQRCode'/>
         </div>
     )
 }
