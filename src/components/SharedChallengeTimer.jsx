@@ -15,10 +15,15 @@ const SharedChallengeTimer = ({socket}) => {
         setMinuteTimer(minuteTimer)
     }
 
+    const resetTimer = () => {
+        setSecondeTimer(0)
+        setMinuteTimer(0)
+    }
+
     useEffect(() => {
         if (socket){
             socket.on('connection', setTimerFromWs)
-            socket.on('new.challenge', setTimerFromWs)
+            socket.on('new.challenge', resetTimer)
         }
     }, [socket])
 
